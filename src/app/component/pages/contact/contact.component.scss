@@ -1,0 +1,57 @@
+.contact-header-content{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.contact-header{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fefefe;
+    margin-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.location-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-card{
+    background-color: #fefefe;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+    flex: 0 0 calc(33.333% - 20px); 
+    min-width: 300px;  
+    width: 300px;
+    min-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background-color: #c8cfd2;;
+    }
+    
+    .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    
+    .card-content {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+    }
+}

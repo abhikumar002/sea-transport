@@ -1,6 +1,53 @@
 <!-- Footer Component Template -->
-<footer>
-    <!-- Add your footer content here -->
-    <p>footer works!</p>
-    <p>© 2025 Sea Transport</p>
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Company Info -->
+        <div class="footer-section">
+            <h3>Sea Transport</h3>
+            <p>We are a leading sea transport company, providing reliable and efficient shipping solutions.</p>
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/Images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="assets/Images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/Images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a routerLink="/services/ocean-freight">Ocean Freight</a></li>
+                <li><a routerLink="/services/air-freight">Air Freight</a></li>
+                <li><a routerLink="/services/road-transport">Road Transport</a></li>
+                <li><a routerLink="/services/rail-transport">Rail Transport</a></li>
+            </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class = "footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/contact">Contact Us</a></li>
+                <li><a routerLink="/services">Our Services</a></li>
+                <li><a routerLink="/faq">FAQ</a></li>
+                <li><a routerLink="/terms">Terms & Conditions</a></li>
+                <li><a routerLink="/privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+            <h3>Subscribe to our Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sea Transport. All rights reserved.</p>
+        </div>
+    </div>
 </footer>
