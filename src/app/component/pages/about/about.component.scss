@@ -1,0 +1,29 @@
+.top-box{
+    height: 300px ;
+    padding: 100px;
+}
+
+.container {
+  margin-top: 10px;
+  display: flex;               /* establishes flex formatting context */
+  justify-content: center;     /* centers items horizontally */
+  align-items: center;      
+  height: 600px;  
+  border: 2px solid red;  
+  justify-content: space-between;            /* or whatever height you need */
+} 
+
+.container-item {
+  /* optional: give your item a size so you can see the centering */
+  width: 300px;
+  height: 400px;
+  background: lightblue;
+  border: 2px solid black; 
+  border-radius: 5px;  /* Added border-radius for rounded corners */
+
+}
+
+.text-center {
+  text-align: center; /* centers text inside the item */
+  padding: 10px;     /* optional: add some padding */
+}

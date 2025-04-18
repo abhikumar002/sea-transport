@@ -1,0 +1,24 @@
+
+/*
+
+<div class= "container" >
+     <div class= "container-item" >
+    <div class= "container-item" >
+</div>
+*/
+
+
+.container {
+  display: flex;               /* establishes flex formatting context */
+  justify-content: center;     /* centers items horizontally */
+  align-items: center;       
+  height: 100vh; 
+  border: 2px solid red;              /* or whatever height you need */
+} 
+
+.container-item {
+  /* optional: give your item a size so you can see the centering */
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+}

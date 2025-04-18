@@ -10,6 +10,7 @@ import { ContactComponent } from './component/pages/contact/contact.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MiddlewareComponent } from './component/middleware/middleware.component';
+import { OurTeamComponent } from './component/pages/our-team/our-team.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MiddlewareComponent } from './component/middleware/middleware.component
     ContactComponent,
     NavbarComponent,
     FooterComponent,
-    MiddlewareComponent
+    MiddlewareComponent,
+    OurTeamComponent
   ],
   imports: [
     BrowserModule,
