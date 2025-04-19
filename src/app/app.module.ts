@@ -11,6 +11,9 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MiddlewareComponent } from './component/middleware/middleware.component';
 import { OurTeamComponent } from './component/pages/our-team/our-team.component';
+import { FAQComponent } from './component/faq/faq.component';
+import { TermsAndConditionsComponent } from './component/terms-and-conditions/terms-and-conditions.component';
+import { PrivacypolicyComponent } from './component/privacypolicy/privacypolicy.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { OurTeamComponent } from './component/pages/our-team/our-team.component'
     NavbarComponent,
     FooterComponent,
     MiddlewareComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    FAQComponent,
+    TermsAndConditionsComponent,
+    PrivacypolicyComponent
   ],
   imports: [
     BrowserModule,
