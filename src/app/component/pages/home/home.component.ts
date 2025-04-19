@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 declare var bootstrap: any;
 
@@ -7,5 +7,18 @@ declare var bootstrap: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit {
+  
+  ngOnInit() {
+    // Initialize the carousel
+    setTimeout(() => {
+      const carouselElement = document.getElementById('homeCarousel');
+      if (carouselElement) {
+        new bootstrap.Carousel(carouselElement, {
+          interval: 5000,
+          wrap: true
+        });
+      }
+    }, 100);
+  }
 }

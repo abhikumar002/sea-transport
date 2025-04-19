@@ -1,39 +1,60 @@
+.our-team {
+    background-color: #a7cfdf;
+    padding-bottom: 40px;
+}
+
 .team-section {
-    padding: 80px 0;
-    background: #f8f9fa;
+    padding: 50px 0;
 
     .section-title {
         margin-bottom: 50px;
+        text-align: center;
+        padding: 0 20px;
 
         h2 {
-            font-size: 36px;
-            color: #333;
+            font-size: 32px;
+            color: #1a3c5e;
             margin-bottom: 20px;
             font-weight: 700;
         }
 
         p {
-            color: #666;
-            font-size: 16px;
+            color: #333;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
         }
     }
 
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
     .team-member {
-        background: #fff;
+        background: #fefefe;
         border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 30px;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex: 0 0 calc(33.333% - 25px);
+        min-width: 300px;
+        overflow: hidden;
 
         &:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            background-color: #c8cfd2;
         }
 
         .member-img {
             position: relative;
             overflow: hidden;
-            border-radius: 10px 10px 0 0;
 
             img {
                 width: 100%;
@@ -48,14 +69,14 @@
 
             h4 {
                 font-size: 22px;
-                color: #333;
+                color: #1a3c5e;
                 margin-bottom: 5px;
                 font-weight: 600;
             }
 
             p {
                 color: #666;
-                font-size: 14px;
+                font-size: 16px;
                 margin-bottom: 15px;
             }
 
@@ -63,7 +84,7 @@
                 p {
                     font-size: 14px;
                     line-height: 1.6;
-                    color: #777;
+                    color: #666;
                 }
             }
         }
@@ -72,30 +93,24 @@
 
 @media (max-width: 991px) {
     .team-section {
-        padding: 60px 0;
+        padding: 40px 0;
 
-        .section-title {
-            h2 {
-                font-size: 30px;
-            }
+        .section-title h2 {
+            font-size: 28px;
         }
     }
 }
 
 @media (max-width: 767px) {
     .team-section {
-        padding: 40px 0;
+        padding: 30px 0;
 
-        .team-member {
-            .member-img img {
-                height: 250px;
-            }
+        .team-member .member-img img {
+            height: 250px;
         }
 
-        .section-title {
-            h2 {
-                font-size: 26px;
-            }
+        .section-title h2 {
+            font-size: 24px;
         }
     }
 }

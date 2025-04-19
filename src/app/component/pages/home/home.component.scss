@@ -1,4 +1,229 @@
+.home {
+  background-color: #a7cfdf;
+}
+
+.carousel-inner {
+  background-color: #0c2440; /* Dark background for any empty space */
+}
+
 .carousel-inner img {
-    height: 500px;
+  height: auto; /* Auto height to maintain aspect ratio */
+  max-height: 500px; /* Maximum height constraint */
+  width: 100%;
+  object-fit: contain; /* Changed from cover to contain to show full image */
+}
+
+.home-header-content {
+  padding: 50px 20px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-header-content h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a3c5e;
+}
+
+.home-header-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.service-card {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 0 0 calc(33.333% - 20px);
+  min-width: 300px;
+  width: 300px;
+  min-height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #c8cfd2;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .card-content {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+}
+
+.features-section {
+  background-color: #f5f8fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  color: #1a3c5e;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  flex: 0 0 calc(25% - 20px);
+  min-width: 250px;
+  padding: 20px;
+}
+
+.feature-item i {
+  font-size: 40px;
+  color: #1a3c5e;
+  margin-bottom: 15px;
+}
+
+.call-to-action {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fefefe;
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h2 {
+  font-size: 32px;
+  color: #1a3c5e;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  background-color: #1a3c5e;
+  border-color: #1a3c5e;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  
+  &:hover {
+    background-color: #0c2440;
+    border-color: #0c2440;
+  }
+}
+
+.team-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #a7cfdf;
+}
+
+.team-section h2 {
+  font-size: 32px;
+  color: #1a3c5e;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 0 0 calc(25% - 25px);
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #c8cfd2;
+  }
+}
+
+.team-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 5px solid #f5f8fa;
+  
+  img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
+}
+
+.member-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a3c5e;
+  margin-bottom: 5px;
+}
+
+.member-position {
+  font-size: 16px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.member-bio {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
