@@ -13,7 +13,7 @@ import { PrivacypolicyComponent } from './component/privacypolicy/privacypolicy.
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServicesComponent },
+  { path: 'services', component: ServicesComponent, data: { scrollPositionRestoration: 'enabled'}},
   { path: 'contact', component: ContactComponent },
   { path: 'our-team', component: OurTeamComponent },
   { path: 'FAQ', component: FAQComponent },
@@ -23,7 +23,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 70]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
