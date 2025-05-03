@@ -1,5 +1,64 @@
 .about {
-  background-color: #a7cfdf;
+    background-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(26, 60, 94, 0.8), rgba(26, 60, 94, 0.9)),
+                url('/assets/Images/ship-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+
+    .hero-content {
+        width: 100%;
+        padding: 0 20px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-intro {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+
+    h2 {
+        color: #1a3c5e;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+        color: #555;
+    }
+}
+
+.mission-vision-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
 }
 
 .about-header {
@@ -20,48 +79,92 @@
 }
 
 .about-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  overflow-x: auto;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+
+    &.full-width {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
 }
 
 .about-card {
-  background-color: #fefefe;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 0;
-  flex: 0 0 calc(33.333% - 20px);
-  min-width: 300px;
-  width: 300px;
-  min-height: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    background-color: #c8cfd2;
-  }
-  
-  .card-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #333;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon {
+        font-size: 36px;
+        color: #1a3c5e;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .card-title {
+        color: #1a3c5e;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .card-content {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.6;
+
+        ul.features-list {
+            list-style: none;
+            padding: 0;
+
+            li {
+                padding: 10px 0;
+                border-bottom: 1px solid #eee;
+                
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.global-presence {
+    background-color: #1a3c5e;
+    color: #ffffff;
+    padding: 60px 0;
     text-align: center;
-  }
-  
-  .card-content {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-  }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .statistics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+
+        .stat-item {
+            .number {
+                font-size: 48px;
+                font-weight: 700;
+                display: block;
+            }
+
+            .label {
+                font-size: 18px;
+                opacity: 0.8;
+            }
+        }
+    }
 }
 
 .global-footer {
@@ -74,4 +177,23 @@
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .about-intro h2 {
+        font-size: 28px;
+    }
+
+    .about-cards-container.full-width {
+        grid-template-columns: 1fr;
+    }
+
+    .global-presence .statistics {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
