@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacypolicy.component.scss']
 })
 export class PrivacypolicyComponent {
-  contactEmail: string = 'sales@shuhulshipping.in';
+  contactEmail: string = 'info@shuhulshipping.in';
 }

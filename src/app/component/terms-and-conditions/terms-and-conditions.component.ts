@@ -7,7 +7,7 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
   styleUrls: ['./terms-and-conditions.component.scss']
 })
 export class TermsAndConditionsComponent {
-  email = 'sales@shuhulshipping.in';
+  email = 'info@shuhulshipping.in';
   phone = '+91 73474-77828';
   emailUrl: SafeUrl;
   phoneUrl: SafeUrl;
