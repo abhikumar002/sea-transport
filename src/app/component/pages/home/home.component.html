@@ -106,6 +106,36 @@
   <div class="call-to-action">
     <h2>Ready to Ship with Confidence?</h2>
     <p>Contact our team today to discuss your shipping requirements and discover how we can provide tailored solutions for your business needs.</p>
-    <button class="btn btn-primary">Get a Quote</button>
+    <button class="btn btn-primary" (click)="toggleQuoteForm()">
+      {{ showQuoteForm ? 'Close Form' : 'Get a Quote' }}
+    </button>
+
+    <div class="quote-form" *ngIf="showQuoteForm">
+      <form #quoteForm="ngForm" (ngSubmit)="submitQuote(quoteForm)">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" class="form-control" id="name" name="name" ngModel required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" class="form-control" id="email" name="email" ngModel required email>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone </label>
+          <input type="phone" class="form-control" id="phone" name="phone" ngModel>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea class="form-control" id="message" name="message" rows="4" ngModel required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!quoteForm.valid">
+          Submit Quote Request
+        </button>
+      </form>
+    </div>
   </div>
 </div>
